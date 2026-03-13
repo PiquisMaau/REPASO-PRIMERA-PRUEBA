@@ -63,7 +63,7 @@ namespace Ejercicio_Repaso_1
                 {
                     sumatoria += notas[f, c];
                 }
-                promedios[f] = sumatoria/ notas.GetLength(0);
+                promedios[f] = sumatoria/ notas.GetLength(1);
             }
 
             return promedios;
