@@ -18,17 +18,18 @@ namespace Ejercicio_Repaso_1
             Console.WriteLine("---------- Gestor de Notas -----------");
             Console.WriteLine("Ingresa el numero de estudiantes: ");
             int estudiantes = int.Parse(Console.ReadLine());
-            for (int f = 0; f < CrearMatrizNotas(estudiantes).GetLength(0); f++)
+            double[,] notas = CrearMatrizNotas(estudiantes);
+            for (int f = 0; f < notas.GetLength(0); f++)
             {
-                for (int c = 0; c < CrearMatrizNotas(estudiantes).GetLength(1); c++)
+                for (int c = 0; c < notas.GetLength(1); c++)
                 {
-                    Console.Write(Math.Round(CrearMatrizNotas(estudiantes)[f, c]) + " ");
+                    Console.Write(Math.Round(notas[f, c]) + " ");
                 }
                 Console.WriteLine();
             }
             Console.WriteLine();
             Console.WriteLine("El promedio de notas de cada estudiante es: ");
-            foreach(double promedios in PromediosNotasEstudiantes(CrearMatrizNotas(estudiantes)))
+            foreach(double promedios in PromediosNotasEstudiantes(notas))
             {
                 Console.Write(Math.Round(promedios) + " ");
             }
