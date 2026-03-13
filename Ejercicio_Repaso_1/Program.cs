@@ -64,6 +64,7 @@ namespace Ejercicio_Repaso_1
                 }
                 promedios[f] = sumatoria/ notas.GetLength(0);
             }
+
             return promedios;
         }
     }
