@@ -23,7 +23,7 @@ namespace Ejercicio_Repaso_1
             {
                 for (int c = 0; c < notas.GetLength(1); c++)
                 {
-                    Console.Write(Math.Round(notas[f, c]) + " ");
+                    Console.Write(Math.Round(notas[f, c],2) + " ");
                 }
                 Console.WriteLine();
             }
@@ -31,10 +31,10 @@ namespace Ejercicio_Repaso_1
             Console.WriteLine("El promedio de notas de cada estudiante es: ");
             foreach(double promedios in PromediosNotasEstudiantes(notas))
             {
-                Console.Write(Math.Round(promedios) + " ");
+                Console.Write(Math.Round(promedios,2) + " ");
             }
 
-
+            
         }
 
         static double[,] CrearMatrizNotas(int filas)
