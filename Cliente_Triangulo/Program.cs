@@ -11,16 +11,34 @@ namespace Cliente_Triangulo
     {
         static void Main(string[] args)
         {
-            Triangulo triangulo = new Triangulo();
+            Punto p1 = new Punto();
+            Punto p2 = new Punto();
+            Punto p3 = new Punto();
+            Triangulo triangulo2 = new Triangulo(p1,p2,p3);
 
+            Triangulo triangulo = new Triangulo();
+            //Datos de los puntos
             triangulo.x1 = 0;
             triangulo.y1 = 0;
-            triangulo.x2 = 0;
+            triangulo.x2 = 6;
             triangulo.y2 = 0;
             triangulo.x3 = 3;
             triangulo.y3 = 10;
 
-            triangulo.
+            //Cálculo de lados
+            triangulo.CalcularLdos();
+
+            //Imprimimos lados
+            Console.WriteLine(triangulo.ladoA);
+            Console.WriteLine(triangulo.ladoB);
+            Console.WriteLine(triangulo.ladoC);
+
+            //VerificamoS si el triángulo 
+            if (triangulo.VerificarTrianguloCorrecto())
+            {
+                Console.WriteLine("Es un triángulo correcto");
+            }
+
 
         }
     }
