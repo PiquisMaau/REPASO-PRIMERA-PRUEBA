@@ -7,29 +7,55 @@ using System.Threading.Tasks;
 
 namespace VectorPrimoRepaso
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             //Dado un rangoInicial & rangoFinal
-            //crear me Vector de los primos(métodos).
+            //crear un Vector de los primos(métodos).
             //excepto aquellos que terminan en 1.
-
+            Console.Write("Ingresa un rango inicial: ");
             int rangoInicial = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ingresa un rango final: ");
             int rangoFinal = Convert.ToInt32(Console.ReadLine()), contador = 0;
 
             int[] numeros = new int[rangoFinal - rangoInicial];
             int[] primos = new int[7];
 
 
-            for (int i = rangoInicial; i < rangoFinal; i++)
+            for (int i = rangoInicial; i <= rangoFinal ; i++)
             {
-                
+                Console.WriteLine(NumeroPrimo(i));
+                NumeroPrimoV2(i);
+                if (NumeroPrimo(i)) contador++;
             }
+            Console.WriteLine(contador);
+
 
         }
 
-        Boolean NumeroPrimo(int numero)
+        private static Boolean NumeroPrimoV2(int numero)
+        {
+            if (numero == 0 || numero == 1 || numero < 0)
+            {
+                return false;
+            }
+            if (numero % 2 == 0 && numero != 2)
+            {
+                return false;
+            }
+
+            for (int i = 2; i < numero - 1; i++)
+            {
+                if (numero % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static Boolean NumeroPrimo(int numero)
         {
             if (numero== 0 || numero == 1 || numero <0)
             {
