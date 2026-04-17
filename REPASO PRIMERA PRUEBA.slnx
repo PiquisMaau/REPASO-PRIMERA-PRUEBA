@@ -8,6 +8,7 @@
   <Project Path="Ejercicio_2/Ejercicio_2.csproj" Id="12be8cbb-bafa-41f5-bab2-d1a768f04d56" />
   <Project Path="Ejercicio_Repaso_1/Ejercicio_Repaso_1.csproj" Id="121dcab1-c4ec-4a88-bd73-906587907a38" />
   <Project Path="FigurasGeometricasBiclioteca/FigurasGeometricasBiclioteca.csproj" Id="437a6102-cee8-4f65-8296-b38eb5253a60" />
+  <Project Path="MatricesRepaso/MatricesRepaso.csproj" Id="15a5fa8a-cb8a-4ced-958a-ec8121b94a3c" />
   <Project Path="SimuladorBancarioRepaso/SimuladorBancarioRepaso.csproj" Id="88f83288-4d6d-433d-bd70-47196c1b54e5" />
   <Project Path="VectorPrimoRepaso/VectorPrimoRepaso.csproj" Id="fc8b982e-a4ad-42fb-9b2e-c91413aa79c0" />
 </Solution>
