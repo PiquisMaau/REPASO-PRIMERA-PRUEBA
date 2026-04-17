@@ -21,15 +21,21 @@ namespace VectorPrimoRepaso
 
             int[] numeros = new int[rangoFinal - rangoInicial];
             int[] primos = new int[7];
+            List<int> list = new List<int>();
 
 
             for (int i = rangoInicial; i <= rangoFinal ; i++)
             {
-                Console.WriteLine(NumeroPrimo(i));
-                if (NumeroPrimo(i)) contador++;
+                //Console.WriteLine(NumeroPrimo(i));
+                //if (NumeroPrimo(i)) contador++;
+                SiEsUnoNo(i, list);
             }
-            Console.WriteLine(contador);
-
+            //Console.WriteLine(contador);
+            foreach (var item in list)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
 
         }
 
@@ -73,6 +79,15 @@ namespace VectorPrimoRepaso
                 }
             }
             return true;
+        }
+
+        public static void SiEsUnoNo(int numero, List<int> list)
+        {
+            if (NumeroPrimo(numero) == true && numero%10 != 1)
+            {
+                list.Add(numero);
+            }
+           
         }
     }
 }
