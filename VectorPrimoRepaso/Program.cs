@@ -26,7 +26,6 @@ namespace VectorPrimoRepaso
             for (int i = rangoInicial; i <= rangoFinal ; i++)
             {
                 Console.WriteLine(NumeroPrimo(i));
-                NumeroPrimoV2(i);
                 if (NumeroPrimo(i)) contador++;
             }
             Console.WriteLine(contador);
@@ -34,26 +33,26 @@ namespace VectorPrimoRepaso
 
         }
 
-        private static Boolean NumeroPrimoV2(int numero)
-        {
-            if (numero == 0 || numero == 1 || numero < 0)
-            {
-                return false;
-            }
-            if (numero % 2 == 0 && numero != 2)
-            {
-                return false;
-            }
+        //private static Boolean NumeroPrimoV2(int numero)
+        //{
+        //    if (numero == 0 || numero == 1 || numero < 0)
+        //    {
+        //        return false;
+        //    }
+        //    if (numero % 2 == 0 && numero != 2)
+        //    {
+        //        return false;
+        //    }
 
-            for (int i = 2; i < numero - 1; i++)
-            {
-                if (numero % i == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+        //    for (int i = 2; i < numero - 1; i++)
+        //    {
+        //        if (numero % i == 0)
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
 
         public static Boolean NumeroPrimo(int numero)
         {
