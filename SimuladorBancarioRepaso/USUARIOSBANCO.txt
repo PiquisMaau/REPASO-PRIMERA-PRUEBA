@@ -1,0 +1,16 @@
+ID_Usuario;Nombre_Usuario;Nombre;Apellido;Clave;Monto
+1001;jdoe;John;Doe;Pass1234;1500.50
+1002;msmith;Maria;Smith;Secr3t!;230.00
+1003;pgomez;Pablo;Gomez;P@blo99;10540.75
+1004;alopez;Ana;Lopez;AnaLop1;45.20
+1005;bwayne;Bruce;Wayne;Batm4n;999999.99
+1006;ccruz;Carlos;Cruz;Ccruz88;560.10
+1007;lchen;Laura;Chen;Lchen@0;3420.00
+1008;rfernandez;Roberto;Fernandez;RobF#12;89.50
+1009;ssingh;Sara;Singh;S!ngh55;12400.30
+1010;mrodriguez;Martin;Rodriguez;Mrod_1;745.80
+1011;eparker;Elena;Parker;Epark3r;2100.00
+1012;dlee;David;Lee;Dlee$$9;50.00
+1013;jkim;Julia;Kim;Jkim444;8300.25
+1014;hgarcia;Hugo;Garcia;HgarCia;420.75
+1015;nroman;Natalia;Roman;NatR0m;15000.00
